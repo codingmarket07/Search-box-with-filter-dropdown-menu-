@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Search Box with Filter Dropdown Menu</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="search_box_wrap">
+    <div class="search_box">
+      <input type="text" class="input_search" placeholder="Search by filtering">
+      <button>Search</button>
+      <span class="search_icon">
+        <ion-icon name="search-outline" class="icon"></ion-icon>
+      </span>
+    </div>
+    <div class="dropdown">
+      <div class="filter">
+        <span class="text">Filter by type</span>
+        <span class="icon"><ion-icon name="chevron-down-outline"></ion-icon></span>
+      </div>
+      <ul>
+        <li>
+          <label for="checkbox_1">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox_1">
+              <span class="checkmark"></span>
+            </div>
+            <div class="text">
+              Chat
+            </div>
+          </label>
+        </li>
+        <li>
+          <label for="checkbox_2">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox_2">
+              <span class="checkmark"></span>
+            </div>
+            <div class="text">
+              Education
+            </div>
+          </label>
+        </li>
+        <li>
+          <label for="checkbox_3">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox_3">
+              <span class="checkmark"></span>
+            </div>
+            <div class="text">
+              Arts
+            </div>
+          </label>
+        </li>
+        <li>
+          <label for="checkbox_4">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox_4">
+              <span class="checkmark"></span>
+            </div>
+            <div class="text">
+              Meetings
+            </div>
+          </label>
+        </li>
+        <li>
+          <label for="checkbox_5">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox_5">
+              <span class="checkmark"></span>
+            </div>
+            <div class="text">
+              Trainings
+            </div>
+          </label>
+        </li>
+        <li>
+          <label for="checkbox_6">
+            <div class="checkbox">
+              <input type="checkbox" id="checkbox_6">
+              <span class="checkmark"></span>
+            </div>
+            <div class="text">
+              medical
+            </div>
+          </label>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
