@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
+:root{
+  --bg-clr: #f7f6fb;
+  --white: #fff;
+  --text-clr: #6c6d76;
+  --brd-clr: #eff0f9;
+  --brd-focus-clr: #d2d9f0;
+  --primary-clr: #6d7fe2;
+  --btn-hvr-clr: #6e7cc7;
+}
+
 *{
   margin: 0;
   padding: 0;
@@ -10,7 +20,7 @@
 }
 
 body{
-  background: #f7f6fb;
+  background: var(--bg-clr);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -23,7 +33,7 @@ body{
 
 .search_box_wrap{
   display: flex;
-  background: #fff;
+  background: var(--white);
   padding: 35px;
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,0.05);
@@ -40,7 +50,7 @@ body{
 
 .search_box_wrap .search_box .input_search{
   padding: 10px 10px 10px 35px;
-  border: 2px solid #eff0f9;
+  border: 2px solid var(--brd-clr);
   border-right: 0;
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
@@ -49,23 +59,23 @@ body{
 }
 
 .search_box_wrap .search_box .input_search:focus{
-   border-color: #d2d9f0;
+   border-color: var(--brd-focus-clr);
 }
 
 .search_box_wrap .search_box button{
   width: 100px;
   height: 45px;
   border: 0;
-  background: #6d7fe2;
+  background: var(--primary-clr);
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  color: #eff0f9;
+  color: var(--brd-clr);
   cursor: pointer;
 }
 
 .search_box_wrap .search_box  button:hover{
-  background: #6e7cc7;
-  border-color: #6e7cc7;
+  background: var(--btn-hvr-clr);
+  border-color: var(--btn-hvr-clr);
 }
 
 .search_box_wrap .search_box .search_icon{
@@ -74,7 +84,7 @@ body{
   transform: translateY(-50%);
   left: 10px;
   font-size: 20px;
-  color: #6c6d76;
+  color: var(--text-clr);
 }
 
 .dropdown {
@@ -82,11 +92,11 @@ body{
 }
 
 .dropdown .filter{
-  border: 2px solid #eff0f9;
+  border: 2px solid var(--brd-clr);
   height: 45px;
   padding: 10px 40px 10px 30px ;
   border-radius: 5px;
-  color: #6c6d76;
+  color: var(--text-clr);
   position: relative;
   width: 185px;
   cursor: pointer;
@@ -106,7 +116,7 @@ body{
   position: absolute;
   top: 60px;
   left: 0;
-  background: #fff;
+  background: var(--white);
   border-radius: 5px;
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   padding: 20px;
@@ -127,11 +137,11 @@ body{
   align-items: center;
   cursor: pointer;
   user-select: none;
-  color: #6c6d76;
+  color: var(--text-clr);
 }
 
 .dropdown ul li label:hover{
-  color: #6d7fe2;
+  color: var(--primary-clr);
 }
 
 .dropdown ul li label .checkbox{
@@ -146,7 +156,7 @@ body{
 }
 
 .dropdown ul li label .checkbox .checkmark{
-  border: 2px solid #eff0f9;
+  border: 2px solid var(--brd-clr);
   width: 25px;
   height: 25px;
   position: absolute;
@@ -164,17 +174,17 @@ body{
     width: 10px;
     height: 4px;
     border: 2px solid;
-    border-color: transparent transparent #fff #fff;
+    border-color: transparent transparent var(--white) var(--white);
     transform: rotate(-45deg);
 }
 
 .dropdown ul li label.active .checkbox input:checked ~ .checkmark{
-  background: #6d7fe2;
-  border-color: #6d7fe2;
+  background: var(--primary-clr);
+  border-color: var(--primary-clr);
 }
 
 .dropdown .filter.active{
-  border-color: #d2d9f0;
+  border-color: var(--brd-focus-clr);
 }
 
 .dropdown .filter.active + ul{
