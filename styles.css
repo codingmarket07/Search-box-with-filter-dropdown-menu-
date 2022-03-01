@@ -48,6 +48,10 @@ body{
   height: 45px;
 }
 
+.search_box_wrap .search_box .input_search:focus{
+   border-color: #d2d9f0;
+}
+
 .search_box_wrap .search_box button{
   width: 100px;
   height: 45px;
@@ -124,6 +128,10 @@ body{
   cursor: pointer;
   user-select: none;
   color: #6c6d76;
+}
+
+.dropdown ul li label:hover{
+  color: #6d7fe2;
 }
 
 .dropdown ul li label .checkbox{
