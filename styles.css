@@ -178,7 +178,7 @@ body{
     transform: rotate(-45deg);
 }
 
-.dropdown ul li label.active .checkbox input:checked ~ .checkmark{
+.dropdown ul li label .checkbox input:checked ~ .checkmark{
   background: var(--primary-clr);
   border-color: var(--primary-clr);
 }
