@@ -121,6 +121,7 @@ body{
   box-shadow: 0 0 5px rgba(0,0,0,0.1);
   padding: 20px;
   opacity: 0;
+  visibility: hidden;
   transition: 0.3s ease;
 }
 
@@ -189,6 +190,7 @@ body{
 
 .dropdown .filter.active + ul{
   opacity: 1;
+  visibility: visible;
 }
 
 .dropdown .filter.active .icon{
